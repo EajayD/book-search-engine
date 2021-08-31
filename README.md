@@ -22,21 +22,29 @@ This is a simple application that utilizes an entire MERN stack convention with 
   Once you have the node modules you can run the commands below in your terminal to initiate the program
 
   ```
-  npm run seed
   npm run develop
   ```
-
-  Then head over to <a href = "http://localhost:3001">http://localhost:3001</a> and get started with your book searching adventure!
+  The application should open automatically in your default browser but in the event that it does not head over to <a href = "http://localhost:3000">http://localhost:3000</a> and get started with your book searching adventure!
 
 ## Usage
 
-Alternatively you can click this live deployed link powered be Heroku to get started
+Alternatively you can click this live deployed link powered by Heroku to get started
 
 <a href ="https://quiet-spire-96050.herokuapp.com/">https://quiet-spire-96050.herokuapp.com/</a>
 
 Below is a preview of what to expect on your book searching adventure!
 
-<img src="./public/Screenshot.png" alt="preview">
+As you can see in the following animation, a user can type a search term (in this case, "star wars") in a search box and the results appear:
+
+![Animation shows "star wars" typed into a search box and books about Star Wars appearing as results.](./assets/21-mern-homework-demo-01.gif)
+
+The user can save books by clicking "Save This Book!" under each search result, as shown in the following animation:
+
+![Animation shows user clicking "Save This Book!" button to save books that appear in search results. The button label changes to "Book Already Saved" after it is clicked and the book is saved.](./assets/21-mern-homework-demo-02.gif)
+
+A user can view their saved books on a separate page and remove books, as shown in the following animation:
+
+![The Viewing Lernantino's Books page shows the books that the user Lernaninto has saved.](./assets/21-mern-homework-demo-03.gif)
 
 ## Built With
 
