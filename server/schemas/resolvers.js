@@ -13,8 +13,8 @@ const resolvers = {
     },
 
     Mutation: {
-        login: async (parent, { username, email, password }) => {
-            const user = await User.findOne({ username, email });
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
       
             if (!user) {
               throw new AuthenticationError('No profile with this email found!');
@@ -44,7 +44,7 @@ const resolvers = {
                         {_id: context.user._id},
                         {$addToSet: {savedBooks: args}},
                         {new: true, runValidators: true}
-                    ),
+                    );
                     return bookSave;
                 } catch (err) {
                     return err;
@@ -60,7 +60,7 @@ const resolvers = {
                     {_id: context.user._id},
                     {$pull: {savedBooks: {bookId}}},
                     {new: true}
-                ),
+                );
                 return bookRemove; 
             } catch (err) {
                 return err;
